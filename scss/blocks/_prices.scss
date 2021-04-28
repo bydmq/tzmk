@@ -1,0 +1,51 @@
+.prices{
+    padding-top: 65px;
+    padding-bottom: 115px;
+    &__title{
+        margin-bottom: 80px;
+        color: $color-blue;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    &__item{
+        width: 360px;
+    }
+    &__item-img{
+        margin-bottom: 25px;
+    }
+    &__item-descr{
+        margin: 0;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+    }
+    &__btn{
+        width: 300px;
+        border: 3px solid $color-blue;
+        background-color: $color-white;
+        color: $color-black;
+    }
+}
+@media (max-width: 1000px){
+    .prices{
+        padding-top: 20px;
+        padding-bottom: 50px;
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__list{
+            margin-bottom: 25px;
+        }
+        &__item{
+            width: 225px;
+        }
+        &__item-descr{
+            font-size: 13px;
+        }
+    }
+}

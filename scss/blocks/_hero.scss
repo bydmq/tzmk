@@ -1,0 +1,151 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__inner{
+        display: flex;
+    }
+    &__title{
+        width: 860px;
+        margin: 0;
+        margin-bottom: 60px;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 130%;
+        color: $color-white;
+    }
+    &__info-item{
+        position: relative;
+        margin: 0;
+        padding-left: 39px;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-white;
+        &:not(:last-child){
+            margin-bottom: 18px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url(../img/hero-item-icon.svg);
+        }
+    }
+    &__form{
+        width: 490px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        margin-left: auto;
+        padding: 35px 35px 20px 35px;
+        background-color: $color-white;
+        box-shadow: 0px 4px 6px rgba(0,0,0,.05);
+    }
+    &__form-title{
+        margin: 0;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+    }
+    &__form-input{
+        width: 420px;
+        height: 50px;
+        border: 3px solid #eee;
+        border-radius: 25px;
+        padding-left: 35px;
+        background-color: $color-white;
+        &--name{
+            margin-bottom: 15px;
+        }
+        &--phone{
+            margin-bottom: 30px;
+        }
+        &::placeholder{
+            font-family: 'PT Sans Caption', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: $color-gray;
+        }
+    }
+    &__form-btn{
+        width: 420px;
+        margin-bottom: 30px;
+    }
+    &__form-descr{
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        margin: 0;
+    }
+}
+@media (max-width: 1000px){
+    .hero{
+        &__title{
+            width: 470px;
+            font-size: 24px;
+        }
+    }
+}
+@media (max-width: 480px){
+    .hero{
+        background-position: center;
+        &__inner{
+            flex-direction: column;
+        }
+        &__title{
+            width: 280px;
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+        &__info-item{
+            width: 220px;
+            font-size: 13px;
+        }
+        &__form{
+            width: 100%;
+            border-radius: 0;
+            margin-left: 0;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            box-shadow: none;
+        }
+        &__form-title{
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        &__form-input{
+            width: 280px;
+            &--name{
+                margin-bottom: 10px;
+            }
+            &--phone{
+                margin-bottom: 20px;
+            }
+            &::placeholder{
+                font-size: 14px;
+            }
+        }
+        &__form-btn{
+            width: 280px;
+            margin-bottom: 10px;
+        }
+        &__form-descr{
+            font-size: 10px;
+        }
+    }
+}

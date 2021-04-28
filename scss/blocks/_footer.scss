@@ -1,0 +1,103 @@
+.footer{
+    padding-top: 50px;
+    padding-bottom: 55px;
+    background-color: $color-black;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 150%;
+        color: $color-white;
+    }
+    &__copyright{
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color: $color-gray;
+    }
+    &__nav-title{
+        margin: 0;
+        margin-bottom: 15px;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        color: $color-white;
+    }
+    &__nav-link{
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        text-decoration: underline;
+        color: $color-gray;
+    }
+    &__contacts{
+        font-size: 20px;
+        line-height: 150%;
+    }
+    &__contacts-box{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        padding-left: 44px;
+        &::before{
+            content: "";
+            position: absolute;
+            top: calc(50% - 10px);
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url(../img/header-phone-icon.svg);
+        }
+    }
+    &__contacts-phone{
+        color: $color-white;
+    }
+    &__contacts-email{
+        position: relative;
+        padding-left: 44px;
+        color: $color-white;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-image: url(../img/header-email-icon.svg);
+        }
+    }
+}
+@media (max-width: 1000px){
+    .footer{
+        &__logo{
+            font-size: 20px;
+        }
+        &__contacts{
+            font-size: 16px;
+        }
+        &__contacts-box{
+            padding-left: 0;
+            &::before{
+                content: none;
+            }
+        }
+        &__contacts-email{
+            padding-left: 0;
+            &::before{
+                content: none;
+            }
+        }
+    }
+}

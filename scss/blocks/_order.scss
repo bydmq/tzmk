@@ -1,0 +1,125 @@
+.order{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-color: $color-black;
+    &__content{
+        width: 735px;
+        padding-left: 165px;
+    }
+    &__title{
+        margin-bottom: 45px;
+        color: $color-white;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+    &__form-inner{
+        width: 660px;
+        margin-bottom: 20px;
+        &--dflex{
+            display: flex;
+        }
+        &--checkbox{
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+    }
+    &__form-box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form-name{
+        margin: 0;
+        margin-bottom: 15px;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: $color-gray;
+    }
+    &__form-input{
+        width: 100%;
+        height: 40px;
+        border: 3px solid #eee;
+        padding-left: 20px;
+        background-color: $color-white;
+        &--size{
+            width: 200px;
+        }
+        &--phone{
+            width: 430px;
+        }
+        &::placeholder{
+            font-family: 'PT Sans Caption', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: $color-gray;
+        }
+    }
+    &__form-select{
+        width: 200px;
+        height: 40px;
+        margin-right: 30px;
+    }
+    &__form-checkbox{
+        margin-right: 5px;
+    }
+    &__form-text{
+        margin: 0;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: $color-light-gray;
+    }
+    &__form-btn{
+        width: 300px;
+        height: 50px;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        background-color: $color-yellow;
+        color: $color-black;
+        &:hover{
+            background-color: #fcd52a;
+        }
+        &:active{
+            background-color: #fcb12a;
+        }
+    }
+    &__form-descr{
+        margin: 0;
+        width: 735px;
+        font-family: 'PT Sans Caption', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        text-align: center;
+        color: $color-light-gray;
+    }
+}
+@media (max-width: 1000px){
+    .order{
+        &__inner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__content{
+            padding-left: 0;
+        }
+        &__title{
+            font-size: 28px;
+        }
+    }
+}
