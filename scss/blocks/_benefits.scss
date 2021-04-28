@@ -76,3 +76,46 @@
         }
     }
 }
+@media (max-width: 870px){
+    .benefits{
+        &__descr{
+            font-size: 14px;
+        }
+        &__item-value{
+            font-size: 28px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .benefits{
+        &__descr-item{
+            &:first-child{
+                width: 100%;
+            }
+        }
+        &__list{
+            flex-direction: column;
+        }
+        &__item{
+            margin-bottom: 30px;
+        }
+        &__item-value{
+            font-size: 50px;
+        }
+        &__item-descr{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 480px){
+    .benefits{
+        padding-top: 20px;
+        padding-bottom: 0;
+        &__title{
+            margin-bottom: 35px;
+        }
+        &__descr{
+            display: none;
+        }
+    }
+}

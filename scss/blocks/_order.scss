@@ -123,3 +123,187 @@
         }
     }
 }
+@media (max-width: 870px){
+    .order{
+        &__content{
+            width: 470px;
+        }
+        &__form-inner{
+            width: 470px;
+            &--dflex{
+                flex-direction: column;
+            }
+            &--checkbox{
+                margin-bottom: 20px;
+            }
+        }   
+        &__form-select{
+            width: 470px;
+        }
+        &__form-box{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & .order__form-input{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__form-input{
+            width: 470px;
+        }
+        &__form-text{
+            font-size: 13px;
+        }
+        &__form-btn{
+            width: 470px;
+        }
+        &__form-descr{
+            width: 600px;
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 670px){
+    .order{
+        &__content{
+            width: 380px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__form-inner{
+            width: 380px;
+            &--dflex{
+                flex-direction: column;
+            }
+            &--checkbox{
+                margin-bottom: 20px;
+            }
+        }   
+        &__form-select{
+            width: 380px;
+        }
+        &__form-box{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & .order__form-input{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__form-input{
+            width: 380px;
+        }
+        &__form-text{
+            font-size: 13px;
+        }
+        &__form-btn{
+            width: 380px;
+        }
+        &__form-descr{
+            display: none;
+        }
+    }
+}
+@media (max-width: 480px){
+    .order{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__content{
+            width: 280px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__form-name{
+            font-size: 12px;
+        }
+        &__form-inner{
+            width: 280px;
+            &--dflex{
+                flex-direction: column;
+            }
+            &--checkbox{
+                margin-bottom: 20px;
+            }
+            &::placeholder{
+                font-size: 14px;
+            }
+        }   
+        &__form-select{
+            width: 280px;
+        }
+        &__form-box{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & .order__form-input{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__form-input{
+            width: 280px;
+        }
+        &__form-text{
+            font-size: 13px;
+        }
+        &__form-btn{
+            width: 280px;
+        }
+    }
+}
+@media (max-width: 400px){
+    .order{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &__content{
+            width: 260px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__form-name{
+            font-size: 10px;
+        }
+        &__form-inner{
+            width: 260px;
+            &--dflex{
+                flex-direction: column;
+            }
+            &--checkbox{
+                margin-bottom: 20px;
+            }
+        }   
+        &__form-select{
+            width: 260px;
+        }
+        &__form-box{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & .order__form-input{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__form-input{
+            width: 260px;
+        }
+        &__form-text{
+            font-size: 13px;
+        }
+        &__form-btn{
+            width: 260px;
+        }
+        &__form-descr{
+            display: none;
+        }
+    }
+}

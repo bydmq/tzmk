@@ -90,3 +90,38 @@
         }
     }
 }
+@media (max-width: 480px){
+    .payment{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__content{
+            width: 100%;
+        }
+        &__title{
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        &__descr{
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+        &__form-inner{
+            margin-bottom: 5px;
+        }
+        &__form-descr{
+            font-size: 12px;
+        }
+        &__form-value{
+            font-size: 12px;
+        }
+        &__form-width{
+            margin-bottom: 10px;
+        }
+        &__form-step{
+            font-size: 13px;
+        }
+        &__form-btn{
+            width: 130px;
+        }
+    }
+}

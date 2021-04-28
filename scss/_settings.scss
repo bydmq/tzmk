@@ -114,51 +114,65 @@ a{
         }
     }
 }
+@media (max-width: 768px){
+    .contacts{
+        &__email{
+            margin-right: 40px;
+        }
+    }
+}
+@media (max-width: 670px){
+    .contacts{
+        .contacts{
+            &__email{
+                order: 2;
+                margin-right: 0;
+            }
+            &__email-icon{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                margin-right: 0;
+                background-color: $color-white;
+                & path {
+                    fill: $color-black
+                }
+            }
+            &__email-link{
+                display: none;
+            }
+            &__phone{
+                order: 1;
+            }
+            &__phone-icon{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                margin-right: 10px;
+                background-color: $color-white;
+                & path {
+                    fill: $color-black
+                }
+            }
+            &__phone-box{
+                display: none;
+            }
+        }
+    }
+}
 @media (max-width: 480px){
     .bnt{
         font-size: 14px;
     }
-    .contacts{
-        &__email{
-            order: 2;
-            margin-right: 0;
-        }
-        &__email-icon{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            margin-right: 0;
-            background-color: $color-white;
-            & path {
-                fill: $color-black
-            }
-        }
-        &__email-link{
-            display: none;
-        }
-        &__phone{
-            order: 1;
-        }
-        &__phone-icon{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            margin-right: 10px;
-            background-color: $color-white;
-            & path {
-                fill: $color-black
-            }
-        }
-        &__phone-box{
-            display: none;
-        }
+    .title{
+        font-size: 14px;
     }
 }
